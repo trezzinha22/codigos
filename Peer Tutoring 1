@@ -1,0 +1,155 @@
+Primeiro, instale o Node.js no seu computador, se você ainda não o fez. Acesse o site oficial: https://nodejs.org/ e siga as instruções de instalação.
+
+Após instalar o Node.js, você precisará instalar o pacote React. Para isso, abra o terminal e digite o seguinte comando:
+
+Download
+Copy code
+npx create-react-app meu-projeto
+Este comando criará uma nova pasta chamada "meu-projeto" e instalará todas as dependências necessárias para iniciar um projeto React.
+
+Aguarde o processo ser concluído e, em seguida, navegue até a pasta do projeto:
+
+Download
+Copy code
+cd meu-projeto
+Agora você pode iniciar o servidor de desenvolvimento executando o seguinte comando:
+
+Download
+Copy code
+npm start
+Após executar este comando, seu navegador abrirá automaticamente e você verá o aplicativo React em execução.
+
+Para fazer alterações no aplicativo, você pode abrir a pasta "meu-projeto" no seu editor de código preferido e começar a editar os arquivos. Por exemplo, você pode abrir o arquivo "src/App.js" para modificar o componente principal do aplicativo.
+
+Depois de fazer as alterações desejadas, você pode verá-las refletidas automaticamente no navegador.
+
+Por favor, note que este é um guia básico e a prática real pode variar dependendo das configurações do seu projeto e das bibliotecas que você está usando.
+
+
+
+
+No projeto base react que criamos no Peer Tutoring 1, modifique o código do arquivo app.js para que, ao abrir http://localhost:3000/, o retorno seja o seu nome. Observe o exemplo a seguir:
+
+
+javascript
+Download
+Copy code
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+ return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+ );
+}
+
+export default App;
+Agora, para exibir o nome na tela, modifique o código conforme mostrado abaixo:
+
+javascript
+Download
+Copy code
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+ return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Welcome to React, <strong>{process.env.REACT_APP_NAME}</strong>!
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+ );
+}
+
+export default App;
+No entanto, antes de executar este código, você precisará adicionar uma variável de ambiente chamada REACT_APP_NAME no arquivo .env no diretório raiz do seu projeto. Para fazer isso, abra o arquivo .env e adicione a seguinte linha:
+
+Download
+Copy code
+REACT_APP_NAME=YourName
+Substitua "YourName" pelo seu nome. Salve o arquivo e recarregue o aplicativo React no navegador. Agora você verá a mensagem "Welcome to React, YourName!" exibida na tela.
+
+Lembre-se de substituir "YourName" pelo seu nome real, caso contrário, a mensagem exibida na tela será "Welcome to React, YourName!".
+
+
+
+
+No projeto base desenvolvido no Peer Tutoring 1, crie uma nova pasta dentro do src. Nela, elabore um arquivo JavaScript com uma função que retorne uma mensagem ao chamar http://localhost:3000/. Observe o exemplo:
+
+
+javascript
+Download
+Copy code
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+ const [message, setMessage] = React.useState('');
+
+ React.useEffect(() => {
+    fetch('/')
+      .then(response => response.text())
+      .then(data => setMessage(data));
+ }, []);
+
+ return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          {message}
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+ );
+}
+
+export default App;
+Agora, no terminal, execute o comando "npm start" para iniciar o servidor de desenvolvimento. No navegador, acesse http://localhost:3000/ e você verá a mensagem retornada pela função no arquivo JavaScript.
+
+
+
+Here are some follow-up suggestion:
+How to create a new folder in JavaScript?
+How to create a new file in JavaScript?
+How to write a function in JavaScript?
+Scroll to bottom
+

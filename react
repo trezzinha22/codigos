@@ -1,0 +1,59 @@
+
+Toggle Sidebar
+Blackbox
+Subscription
+Vscode Extension
+
+Desenvolva e rode um programa react, evidenciando o passo a passo da instalação.
+
+
+Primeiro, instale o Node.js no seu computador, se você ainda não o fez. Acesse o site oficial: https://nodejs.org/ e siga as instruções de instalação.
+
+Após instalar o Node.js, você precisará instalar o pacote React. Para isso, abra o terminal e digite o seguinte comando:
+
+Download
+Copy code
+npx create-react-app meu-projeto
+Este comando criará uma nova pasta chamada "meu-projeto" e instalará todas as dependências necessárias para iniciar um projeto React.
+
+Aguarde o processo ser concluído e, em seguida, navegue até a pasta do projeto:
+
+Download
+Copy code
+cd meu-projeto
+Agora você pode iniciar o servidor de desenvolvimento executando o seguinte comando:
+
+Download
+Copy code
+npm start
+Após executar este comando, seu navegador abrirá automaticamente e você verá o aplicativo React em execução.
+
+Para fazer alterações no aplicativo, você pode abrir a pasta "meu-projeto" no seu editor de código preferido e começar a editar os arquivos. Por exemplo, você pode abrir o arquivo "src/App.js" para modificar o componente principal do aplicativo.
+
+Depois de fazer as alterações desejadas, você pode verá-las refletidas automaticamente no navegador.
+
+Por favor, note que este é um guia básico e a prática real pode variar dependendo das configurações do seu projeto e das bibliotecas que você está usando.
+
+
+
+Here are some follow-up suggestion:
+Como criar um projeto React?
+Como instalar o React?
+Como criar um componente React?
+Scroll to bottom
+
+Continue
+
+New Chat
+Share
+
+
+Search Web
+Ask a coding question.
+Send message
+By using Blackbox you agree to the 
+Terms
+ and 
+Privacy
+.Questions
+
